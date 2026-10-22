@@ -6,7 +6,7 @@ import { Triangle } from 'lucide-react';
 import { RoughNotationGroup, RoughNotation } from 'react-rough-notation';
 
 export default function Experience() {
-    const [displayExperience, setDisplayExperience] = React.useState("BROCK UNIVERSITY");
+    const [displayExperience, setDisplayExperience] = React.useState("RBC");
     const [show, setShow] = React.useState(false);
 
     React.useEffect(() => {
@@ -15,7 +15,216 @@ export default function Experience() {
     }, [show])
     const experience = [
         {
-            company: "BROCK UNIVERSITY",
+            company: "RBC",
+            title: "Network Security Automation Analyst Co-op @ Royal Bank of Canada",
+            duration: "INCOMING · JAN 2027 - AUG 2027",
+            description: [
+                {
+                    order: "rbc-first",
+                    list: (
+                        <RoughNotationGroup show={show}>
+                            Incoming co-op on the
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700} multiline={true}>
+                                Network Security Site Reliability Engineering (GS)
+                            </RoughNotation>
+                            team in
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700} multiline={true}>
+                                Technology &amp; Operations
+                            </RoughNotation>
+                            at the Royal Bank of Canada.
+                        </RoughNotationGroup>
+                    )
+                }
+            ]
+        },
+        {
+            company: "CIMS",
+            title: "Software Developer @ Carleton Immersive Media Studio",
+            duration: "APR 2026 - AUG 2026",
+            description: [
+                {
+                    order: "cims2-first",
+                    list: (
+                        <RoughNotationGroup show={show}>
+                            Engineered the front-end for the
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700} multiline={true}>
+                                Library and Archives Canada immersive vault
+                            </RoughNotation>
+                            (a 10×2 portrait video wall) in
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700} multiline={true}>
+                                Next.js, React, and TypeScript
+                            </RoughNotation>
+                            , locking the stage to the wall's native
+                            <RoughNotation className="mx-1" type="box" color="currentColor" animationDelay={700} multiline={true}>
+                                10,800 × 3,840
+                            </RoughNotation>
+                            resolution with a resize-driven CSS transform that auto-scales to any dev monitor, plus toggleable 5-/10-column layouts mapped to the physical panel hardware.
+                        </RoughNotationGroup>
+                    )
+                },
+                {
+                    order: "cims2-second",
+                    list: (
+                        <RoughNotationGroup show={show}>
+                            Prototyped
+                            <RoughNotation className="mx-1" type="box" color="currentColor" animationDelay={700} multiline={true}>
+                                four immersive interaction concepts
+                            </RoughNotation>
+                            for exhibiting archival records with low-risk capture: a before/after conservation wipe (UV/raking lighting over real
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700}>
+                                NEF
+                            </RoughNotation>
+                            imagery), a 3D page-curl flipbook, an anaglyph/wiggle stereoscope, and a drag-to-rotate globe.
+                        </RoughNotationGroup>
+                    )
+                },
+                {
+                    order: "cims2-third",
+                    list: (
+                        <RoughNotationGroup show={show}>
+                            Built the
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700} multiline={true}>
+                                frontend unit-testing suite
+                            </RoughNotation>
+                            (
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700} multiline={true}>
+                                Jest + React Testing Library
+                            </RoughNotation>
+                            ) for a Next.js/React/TypeScript geospatial and BIM platform, adding
+                            <RoughNotation className="mx-1" type="box" color="currentColor" animationDelay={700} multiline={true}>
+                                200+ test cases across 30+ files
+                            </RoughNotation>
+                            spanning utilities, hooks, HTTP adapters, reducers, and form components, and caught a case-sensitivity bug in admin authorization that had silently misclassified permissions.
+                        </RoughNotationGroup>
+                    )
+                },
+                {
+                    order: "cims2-fourth",
+                    list: (
+                        <RoughNotationGroup show={show}>
+                            Defined a
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700} multiline={true}>
+                                behavior-driven test strategy
+                            </RoughNotation>
+                            (asserting each distinct behavior once instead of chasing line coverage), documented in a team TESTING.md guide, and isolated side-effectful hooks by mocking
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700} multiline={true}>
+                                fetch, SWR cache, and NextAuth
+                            </RoughNotation>
+                            .
+                        </RoughNotationGroup>
+                    )
+                }
+            ]
+        },
+        {
+            company: "CIMS ",
+            title: "Software Developer @ Carleton Immersive Media Studio",
+            duration: "JAN 2026 - APR 2026",
+            description: [
+                {
+                    order: "cims1-first",
+                    list: (
+                        <RoughNotationGroup show={show}>
+                            Built an interactive touchscreen
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700} multiline={true}>
+                                media-wall exhibit for Library and Archives Canada
+                            </RoughNotation>
+                            in
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700} multiline={true}>
+                                Next.js, React, and TypeScript
+                            </RoughNotation>
+                            , guiding visitors through curated historical stories as an unattended, all-day public installation.
+                        </RoughNotationGroup>
+                    )
+                },
+                {
+                    order: "cims1-second",
+                    list: (
+                        <RoughNotationGroup show={show}>
+                            Shipped a visitor-participation feature ("Where is Home?") that records guests' home countries to a
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700} multiline={true}>
+                                serverless Postgres
+                            </RoughNotation>
+                            database and surfaces live aggregate statistics, backed by a scheduled
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700}>
+                                cron job
+                            </RoughNotation>
+                            that auto-exports quarterly engagement analytics to
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700}>
+                                Excel
+                            </RoughNotation>
+                            .
+                        </RoughNotationGroup>
+                    )
+                },
+                {
+                    order: "cims1-third",
+                    list: (
+                        <RoughNotationGroup show={show}>
+                            Designed a
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700} multiline={true}>
+                                screen-space clustering engine
+                            </RoughNotation>
+                            (grid bucketing + Union-Find) that reduced
+                            <RoughNotation className="mx-1" type="box" color="currentColor" animationDelay={700} multiline={true}>
+                                O(n²) comparisons to near-linear time
+                            </RoughNotation>
+                            , keeping the wall responsive while rendering thousands of points in real time.
+                        </RoughNotationGroup>
+                    )
+                },
+                {
+                    order: "cims1-fourth",
+                    list: (
+                        <RoughNotationGroup show={show}>
+                            Wrote
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700}>
+                                Python
+                            </RoughNotation>
+                            scripts to
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700} multiline={true}>
+                                clean and reconcile historical Canadian census tables (Excel)
+                            </RoughNotation>
+                            spanning
+                            <RoughNotation className="mx-1" type="box" color="currentColor" animationDelay={700} multiline={true}>
+                                14 census years (1825–1926)
+                            </RoughNotation>
+                            , joining district populations to boundary geometries and normalizing them into
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700} multiline={true}>
+                                GeoJSON/PMTiles
+                            </RoughNotation>
+                            map layers (2,700+ district polygons) rendered on the wall's interactive
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700}>
+                                MapLibre
+                            </RoughNotation>
+                            map.
+                        </RoughNotationGroup>
+                    )
+                },
+                {
+                    order: "cims1-fifth",
+                    list: (
+                        <RoughNotationGroup show={show}>
+                            Implemented
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700} multiline={true}>
+                                bilingual (EN/FR) localization
+                            </RoughNotation>
+                            ,
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700}>
+                                kiosk-reliability
+                            </RoughNotation>
+                            behavior (idle-timeout that prompts then resets to home), and a
+                            <RoughNotation className="mx-1" type="underline" color="currentColor" animationDelay={700} multiline={true}>
+                                Sanity CMS
+                            </RoughNotation>
+                            integration so non-developers can edit exhibit content.
+                        </RoughNotationGroup>
+                    )
+                }
+            ]
+        },
+        {
+            company: "BROCK",
             title: "Front-End Web Developer @ Brock University",
             duration: "SEP 2024 - PRESENT",
             description: [
@@ -109,7 +318,7 @@ export default function Experience() {
 
         },
         {
-            company: "BROCK UNIVERSITY ",
+            company: "BROCK ",
             title: "Administrative Technology Assistant @ Brock University",
             duration: "SEP 2024 - PRESENT",
             description: [
@@ -224,7 +433,7 @@ export default function Experience() {
                     {experience.map((exp) => {
                         return (
                             <Button
-                                key={exp.title}
+                                key={exp.company}
                                 variant="text"
                                 color="inherit"
                                 sx={{

@@ -3,6 +3,7 @@ import React from "react";
 import Introduction from "@/components/Introduction";
 import AboutMe from "@/components/AboutMe";
 import Experience from "@/components/Experience";
+import Hackathons from "@/components/Hackathons";
 import Projects from "@/components/Projects";
 import { usePathname } from "next/navigation";
 
@@ -24,6 +25,7 @@ export default function Home() {
       <div className='mx-[20px] lg:mx-[10%] space-y-30'>
         <AboutMe />
         <Experience />
+        <Hackathons />
         <Projects />
       </div>
 

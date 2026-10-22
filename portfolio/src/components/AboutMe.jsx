@@ -7,7 +7,7 @@ import { Triangle } from 'lucide-react';
 
 export default function Aboutme() {
     let x = 1;
-    const recentLanguages = ["JavaScript", "React.js", "Java", "SQL", "Python", "C++"]
+    const recentLanguages = ["TypeScript", "Python", "Java", "Next.js / React", "Spring Boot", "Node.js / Express", "PostgreSQL", "Docker", "Jest / Playwright", "LLM APIs / MCP"]
     return (
         <motion.div
             initial={{ opacity: 0, y: 200 }}
@@ -21,16 +21,16 @@ export default function Aboutme() {
             </div>
 
             <div className='my-12 text-md md:text-lg space-y-4'>
-                <p>I'm a 3rd-year Computer Science student at Brock University and currently working as a Front-End Web Developer / Administrative Technology Assistant at the university.</p>
-                <p >Here are some languages I have been working with:</p>
-                <div className='grid grid-cols-2 max-w-[300px]'>
+                <p>I'm a Computer Science student at Brock University with a focus on full-stack web development. Most recently I was a Software Developer at the Carleton Immersive Media Studio, where I built interactive public exhibits for Library and Archives Canada in Next.js and TypeScript. In January 2027 I'm joining RBC as a Network Security Automation Analyst Co-op.</p>
+                <p>Here are some technologies I have been working with:</p>
+                <div className='grid grid-cols-2 gap-x-8 gap-y-1 max-w-[460px]'>
                     {recentLanguages.map((language, index) => {
                         // if index is an odd number 
                         if (index % 2 === 0) {
                             return (
                                 <motion.div
                                     key={language}
-                                    className='flex items-center gap-2'
+                                    className='flex items-center gap-2 whitespace-nowrap'
                                     initial={{ opacity: 0, y: 200 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
@@ -46,7 +46,7 @@ export default function Aboutme() {
                             return (
                                 <motion.div
                                     key={language}
-                                    className='flex items-center gap-2'
+                                    className='flex items-center gap-2 whitespace-nowrap'
                                     initial={{ opacity: 0, y: 200 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
@@ -60,7 +60,7 @@ export default function Aboutme() {
 
                     })}
                 </div>
-                <p>When I’m not coding, I enjoy learning about AI, exploring new developer tools. I also play a lot of video games.</p>
+                <p>When I’m not coding, I enjoy learning about AI, exploring new developer tools, and playing video games.</p>
             </div>
 
         </motion.div >
